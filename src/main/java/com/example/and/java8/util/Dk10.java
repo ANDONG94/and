@@ -1,11 +1,12 @@
-package com.epsoft.tessreact.java8.util;
+package com.example.and.java8.util;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.BiFunction;
-
+import com.example.and.java8.util.ConvertMoney;
 /**
  * DK10
  * @author 

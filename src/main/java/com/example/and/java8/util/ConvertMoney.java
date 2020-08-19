@@ -1,4 +1,4 @@
-package com.epsoft.tessreact.java8.util;
+package com.example.and.java8.util;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

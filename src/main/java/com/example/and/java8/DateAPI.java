@@ -1,4 +1,6 @@
-package com.epsoft.tessreact.java8;
+package com.example.and.java8;
+
+
 
 import org.junit.Test;
 

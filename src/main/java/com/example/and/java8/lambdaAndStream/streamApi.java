@@ -1,8 +1,5 @@
-package com.epsoft.tessreact.java8.lambdaAndStream;
-
-
-
-import com.epsoft.tessreact.java8.util.Dk10;
+package com.example.and.java8.lambdaAndStream;
+import com.example.and.java8.util.Dk10;
 
 import java.util.*;
 import java.util.stream.Collectors;

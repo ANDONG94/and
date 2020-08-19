@@ -1,7 +1,7 @@
-package com.epsoft.tessreact.java8;
+package com.example.and.java8;
 
 
-import com.epsoft.tessreact.java8.util.Dk10;
+import com.example.and.java8.util.Dk10;
 
 /**
  *
