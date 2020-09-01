@@ -1,5 +1,6 @@
 package com.example.and.java8.lambdaAndStream;
 import com.example.and.java8.util.Dk10;
+import org.junit.Test;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -35,12 +36,8 @@ import java.util.stream.Stream;
 public class streamApi {
 
     //创建Stream、应用中间件、终止操作
-
-    public static void list() {
-
-
-
-
+    @Test
+    public  void list() {
 
         /***创建Stream**********************************************通过集合创建Stream*******************************************/
         List<Dk10> list = new Dk10().listDk10();
@@ -120,7 +117,8 @@ public class streamApi {
 
 
     ///2.通过数组创建Stream
-    public static void array() {
+    @Test
+    public  void array() {
 
         int[] ints = new int[]{};
         IntStream stream = Arrays.stream(ints);
@@ -132,7 +130,8 @@ public class streamApi {
     }
 
     //3.通过Stream创建Stream
-    public static void streamOf() {
+    @Test
+    public  void streamOf() {
         //自定义数组
         List<Dk10> list = new Dk10().listDk10();
         Stream.of(list);
@@ -140,6 +139,7 @@ public class streamApi {
 
 
     //创建 Stream方式四：创建无限流
+    @Test
     public void unlimited() {
 
         //遍历前10个偶数

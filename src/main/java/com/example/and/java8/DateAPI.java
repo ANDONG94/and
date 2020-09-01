@@ -52,7 +52,8 @@ public class DateAPI {
 
 
     //Clock 时钟
-    public static void Clock() {
+    @Test
+    public  void Clock() {
         Clock clock = Clock.systemDefaultZone();
         long millis = clock.millis();
         Instant instant = clock.instant();
@@ -61,7 +62,8 @@ public class DateAPI {
     }
 
     //Timezones 时区
-    public static void Timezones() {
+    @Test
+    public  void Timezones() {
         System.out.println(ZoneId.getAvailableZoneIds());
         // prints all available timezone ids
         ZoneId zone1 = ZoneId.of("Europe/Berlin");
@@ -74,7 +76,8 @@ public class DateAPI {
     }
 
     //LocalTime 本地时间
-    public static void LocalTime(ZoneId zone1, ZoneId zone2) {
+    @Test
+    public  void LocalTime(ZoneId zone1, ZoneId zone2) {
         LocalTime now1 = LocalTime.now(zone1);
         LocalTime now2 = LocalTime.now(zone2);
         System.out.println(now1.isBefore(now2));  // false
@@ -96,7 +99,8 @@ public class DateAPI {
     }
 
     //LocalDate 本地日期
-    public static void LocalDate(ZoneId zone1, ZoneId zone2) {
+    @Test
+    public  void LocalDate(ZoneId zone1, ZoneId zone2) {
 
         LocalDate today = LocalDate.now();
         LocalDate tomorrow = today.plus(1, ChronoUnit.DAYS);
@@ -116,7 +120,8 @@ public class DateAPI {
     }
 
     //LocalDateTime  本地日期
-    public static void LocalDateTime (ZoneId zone1, ZoneId zone2) {
+    @Test
+    public  void LocalDateTime (ZoneId zone1, ZoneId zone2) {
 
         LocalDateTime sylvester = LocalDateTime.of(2014, Month.DECEMBER, 31, 23, 59, 59);
         DayOfWeek dayOfWeek = sylvester.getDayOfWeek();
